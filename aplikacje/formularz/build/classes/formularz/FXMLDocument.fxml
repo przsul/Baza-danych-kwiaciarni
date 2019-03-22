@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="71.0" prefWidth="316.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="formularz.FXMLDocumentController">
+    <children>
+        <Button fx:id="button1" layoutX="181.0" layoutY="14.0" onAction="#handleButtonAction" text="Generuj raport PDF" />
+      <ComboBox fx:id="comboBox1" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

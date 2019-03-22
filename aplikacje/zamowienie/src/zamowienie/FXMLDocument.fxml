@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="1082.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zamowienie.FXMLDocumentController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Login:" />
+      <Label layoutX="217.0" layoutY="14.0" text="Hasło:" />
+      <TextField fx:id="login_TextField" layoutX="57.0" layoutY="10.0" text="Sesee1937" />
+      <PasswordField fx:id="pass_TextField" layoutX="258.0" layoutY="10.0" text="phahH0medai" />
+      <Button fx:id="loguj_Button" layoutX="414.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="54.0" text="Loguj" />
+      <TableView fx:id="produkty_TableView" disable="true" layoutX="8.0" layoutY="47.0" prefHeight="437.0" prefWidth="1066.0" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
+        <columns>
+            <TableColumn fx:id="Nazwa_TableColumn" prefWidth="75.0" text="Nazwa" />
+            <TableColumn fx:id="CenaJednostkowa_TableColumn" prefWidth="75.0" text="CenaJednostkowa" />
+            <TableColumn fx:id="Typ_TableColumn" prefWidth="75.0" text="Typ" />
+            <TableColumn fx:id="Trwalosc_TableColumn" prefWidth="75.0" text="Trwalość" />
+            <TableColumn fx:id="Rozmiar_TableColumn" prefWidth="75.0" text="Rozmiar" />
+            <TableColumn fx:id="Sklad_TableColumn" prefWidth="75.0" text="Skład" />
+            <TableColumn fx:id="Material_TableColumn" prefWidth="75.0" text="Materiał" />
+            <TableColumn fx:id="StanMagazynowy_TableColumn" prefWidth="75.0" text="StanMagazynowy" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="ilosc_Label" disable="true" layoutX="17.0" layoutY="490.0" text="Ilość:" />
+      <Button fx:id="dodaj_Button" disable="true" layoutX="86.0" layoutY="486.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Dodaj do koszyka" />
+      <TextField fx:id="ilosc_TextField" disable="true" layoutX="47.0" layoutY="486.0" prefHeight="25.0" prefWidth="33.0" />
+      <Button fx:id="zaplac_Button" disable="true" layoutX="208.0" layoutY="486.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Zamów" />
+      <Label fx:id="suma_Label" layoutX="17.0" layoutY="525.0" visible="false" />
+   </children>
+</AnchorPane>
